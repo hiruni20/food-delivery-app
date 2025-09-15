@@ -11,6 +11,14 @@ const Navbar = () => {
             <li>mobile-app</li>
             <li>contact us</li>
         </ul>
+        <div className="navbar-right">
+            <img src={assets.search_icon} />
+            <div className="navbar-search-icon">
+                <img src = {assets.basket_icon} alt=""/>
+                <div className='dot'></div>
+            </div>
+            <button>Sign in</button>
+        </div>
     </div>
   )
 }
