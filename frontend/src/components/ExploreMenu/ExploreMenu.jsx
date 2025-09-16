@@ -1,0 +1,24 @@
+import React from 'react'
+import './ExploreMenu.css'
+import { menu_list } from '../../assets/frontend_assets/assets'
+
+const ExploreMenu = () => {
+  return (
+    <div className='explore-menu' id='explore-menu'>
+        <h1>Explore our menu</h1>
+        <p className='explore-menu-text'>Get your favorite meals delivered hot and fresh, anytime, anywhere. Fast, easy, and just a tap away!.Whether it’s breakfast, lunch, dinner, or a midnight craving, we’ve got you covered anytime, anywhere.</p>  
+        <div className='explore-menu-list'>
+            {menu_list.map((item,index)=> {
+                return (
+                    <div key={index} className='explore-menu-list-item'>
+                        <img src={item.menu_image} alt=''/>
+                        <p>{item.menu_name}</p>
+                    </div> 
+                )
+            })}
+        </div>      
+    </div>
+  )
+}
+
+export default ExploreMenu
