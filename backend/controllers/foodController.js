@@ -1,4 +1,4 @@
-import FoodModel from "../models/FoodModel";
+import FoodModel from "../models/FoodModel.js";
 import fs from 'fs'
 
 //add food item
