@@ -9,7 +9,7 @@ const addFood = async (req,res) => {
 
     const food = new FoodModel({
         name:req.body.name,
-        description:req.boq.description,
+        description:req.body.description,
         price:req.body.price,
         category:req.body.category,
         image:image_filename
