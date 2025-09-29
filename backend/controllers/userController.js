@@ -23,6 +23,10 @@ const registerUser = async (req,res) => {
                 return res.jason({success:false,message:"Please entter valid Email"})
             }
 
+            if (password.length<8) {
+                return res.jason({success:false,message:"Please enter strong password "})
+            }
+
             
         } catch (error) {
 
