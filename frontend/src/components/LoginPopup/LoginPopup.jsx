@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './LoginPopup.css'
 import { assets } from '../../assets/frontend_assets/assets'
 
@@ -17,9 +17,7 @@ const LoginPopup = ({ setShowLogin }) => {
         setData(data=>({...data,[name]:value}))
     }
 
-    useEffect(() => {
-        console.log(data);
-    },[data])
+  
 
     return (
         <div className='login-popup'>
